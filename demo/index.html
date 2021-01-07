@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Animation StarWars Text demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script type="module" src="../animation-starwarstext.js"></script>
+    <style>
+      .blocks {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+      }
+      .block {
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        white-space: normal;
+      }
+      .code {
+        padding: 20px;
+        color:#FFF; 
+        background: #000;
+      }
+      .attributes {
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic scene-stwtext Demo</h3>
+      <a href="https://github.com/manufosela/scene-stwtext">github</a>
+      <a href="https://www.npmjs.com/package/scene-stwtext">NPM</a>
+      <div class="blocks">
+        <pre class="block code">
+          <code>
+            &lt;scene-stwtext 
+            speed="100"
+            delay="0"
+            speed="10" 
+            width="1000px"
+            height="80vh"&gt;<br>
+            Texto que quiero que salga como en Star Wars<br>
+            En formato <b>html</b> con el estilo que le ponga...<br>
+            &lt;/scene-stwtext&gt;
+          </code>
+        </pre>
+        <pre class="block attributes">
+          <h3>Attributes</h3>
+          <ul>
+              <li>delay (Number)</li>
+              <li>speed (Number)</li>
+              <li>color (String)</li>
+              <li>width (String)</li>
+              <li>height (String)</li>
+          </ul>
+        </pre>
+      </div>
+
+      <animation-starwarstext speed="100" delay="0" speed="10" height="80vh">
+          Hace tiempo en una galaxia muy muy lejana...<br>
+          <br>
+          Son tiempos adversos para la<br>
+          rebeLITon. Aunque la Estrella de<br>
+          los Frameworks ha sido destruida,<br>
+          las tropas inReactless han<br>
+          hecho salir a las fuerzas<br>
+          rebeLites de sus bases ocultas<br>
+          y las han persiguen a través de<br>
+          la weblaxia.<br>
+
+          Tras escapar de la terrible<br>
+          Flota Angular, un grupo de<br>
+          guerreros de la libertad de los estandares,<br>
+          encabezados por Luke<br>
+          ShadowDOMer, ha establecido<br>
+          una nueva base secreta<br>
+          en el remoto mundo helado<br>
+          de Hhopen-wc.<br>
+
+          El malvado Lord Darth Vue,<br>
+          obsesionado por encontrar al<br>
+          joven ShadowDOMer, ha enviado<br>
+          miles de scrappers especiales<br>
+          hacía las infinitas urls<br>
+          del espacio web....<br>
+      </animation-starwarstext>
+    </div>
+  </body>
+</html>
