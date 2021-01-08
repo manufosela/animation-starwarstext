@@ -1,4 +1,4 @@
-# animation-starwarstext
+# animation-starwarstext [![npm-package](https://img.shields.io/badge/npmjs-package-red)](https://www.npmjs.com/package/animation-starwarstext)
 
 Lit-Element web component description
 
