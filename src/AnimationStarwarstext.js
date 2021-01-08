@@ -4,7 +4,7 @@ import { wcNameStyles } from "./animation-starwarstext-style";
 
 /**
  * `animation-starwarstext`
- * AnimationStarwarsText
+ * AnimationStarwarstext
  *
  * @customElement animation-starwarstext
  * @polymer
@@ -12,7 +12,7 @@ import { wcNameStyles } from "./animation-starwarstext-style";
  * @demo demo/index.html
  */
 
-export class AnimationStarwarsText extends LitElement {
+export class AnimationStarwarstext extends LitElement {
   static get is() { 
     return 'animation-starwarstext'; 
   }
