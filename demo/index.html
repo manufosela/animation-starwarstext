@@ -4,89 +4,92 @@
     <title>Animation StarWars Text demo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-    <script type="module" src="../animation-starwarstext.js"></script>
-    <style>
-      .blocks {
-        display:flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-      }
-      .block {
-        display:flex;
-        flex-direction:column;
-        flex-wrap: wrap;
-        white-space: normal;
-      }
-      .code {
-        padding: 20px;
-        color:#FFF; 
-        background: #000;
-      }
-      .attributes {
-        padding-left: 20px;
-      }
-    </style>
+    <script type="module" src="js/animation-starwarstext.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <div class="vertical-section-container centered">
-      <h3>Basic animation-starwarstext Demo</h3>
-      <a href="https://github.com/manufosela/animation-starwarstext">github</a>
-      <a href="https://www.npmjs.com/package/animation-starwarstext">NPM</a>
-      <div class="blocks">
+    <div class="container">
+      <header>
+        <h1>Basic animation-protonimg Demo</h1>
+        <nav>
+          <a href="https://github.com/manufosela/animation-starwarstext" title="github public repository">
+            <img src="https://img.shields.io/badge/github-repository-green" alt="github public repository" />
+          </a>
+          <a href="https://www.npmjs.com/package/animation-starwarstext" title="npm package">
+            <img src="https://img.shields.io/badge/npmjs-package-red" alt="npm-package" />
+          </a>
+          <a href="https://codepen.io/manufosela/pen/YzGvmBy" title="codepen.io example">
+            <img src="https://img.shields.io/badge/codepen.io-example-black" alt="codepen.io example" />
+          </a>
+        </nav>
+      </header>
+      <aside class="blocks">
         <pre class="block code">
+          <h3>Example</h3>
           <code>
-            &lt;animation-starwarstext
-            speed="100"
-            delay="0"
-            speed="10" 
-            width="1000px"
-            height="80vh"&gt;<br>
-            Texto que quiero que salga como en Star Wars<br>
-            En formato <b>html</b> con el estilo que le ponga...<br>
-            &lt;/animation-starwarstext&gt;
+            &lt;<span class="wc">animation-protonimg</span><br>
+            &nbsp;&nbsp;width="900"<br>
+            &nbsp;&nbsp;height="300"<br>
+            &nbsp;&nbsp;time="5"<br>
+            &nbsp;&nbsp;background="#000"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/animation-protonimg-demo1.png" /&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/animation-protonimg-demo2.png" /&gt;<br>
+            &lt;/<span class="wc">animation-protonimg</span>&gt;
           </code>
         </pre>
         <pre class="block attributes">
           <h3>Attributes</h3>
           <ul>
-              <li>delay (Number)</li>
-              <li>speed (Number)</li>
-              <li>color (String)</li>
-              <li>width (String)</li>
-              <li>height (String)</li>
+            <li>time (String) [0] (it can be 'mouse' or a number of seconds</li>
+            <li>width (Number) [800]</li>
+            <li>height (Number) [400]</li>
+            <li>background (String) [#000]</li>
           </ul>
+          <h3>Events</h3>
+          <ul>
+            <li>animation-protonimg_change-image</li>
+            <li>animation-protonimg_change-image-without-reset</li>
+          </ul>
+          <p class="note">
+            NOTE: Send element id into 
+            detail CustomEvent
+          </p>
         </pre>
-      </div>
+      </aside>
+      
+      <main>
+        <div id="example1" class="block">
+          <animation-starwarstext speed="100" delay="0" speed="10" height="80vh">
+              Hace tiempo en una galaxia muy muy lejana...<br>
+              <br>
+              Son tiempos adversos para la<br>
+              rebeLITon. Aunque la Estrella de<br>
+              los Frameworks ha sido destruida,<br>
+              las tropas inReactless han<br>
+              hecho salir a las fuerzas<br>
+              rebeLites de sus bases ocultas<br>
+              y las han persiguen a través de<br>
+              la weblaxia.<br>
 
-      <animation-starwarstext speed="100" delay="0" speed="10" height="80vh">
-          Hace tiempo en una galaxia muy muy lejana...<br>
-          <br>
-          Son tiempos adversos para la<br>
-          rebeLITon. Aunque la Estrella de<br>
-          los Frameworks ha sido destruida,<br>
-          las tropas inReactless han<br>
-          hecho salir a las fuerzas<br>
-          rebeLites de sus bases ocultas<br>
-          y las han persiguen a través de<br>
-          la weblaxia.<br>
+              Tras escapar de la terrible<br>
+              Flota Angular, un grupo de<br>
+              guerreros de la libertad de los estandares,<br>
+              encabezados por Luke<br>
+              ShadowDOMer, ha establecido<br>
+              una nueva base secreta<br>
+              en el remoto mundo aislado<br>
+              de :host.<br>
 
-          Tras escapar de la terrible<br>
-          Flota Angular, un grupo de<br>
-          guerreros de la libertad de los estandares,<br>
-          encabezados por Luke<br>
-          ShadowDOMer, ha establecido<br>
-          una nueva base secreta<br>
-          en el remoto mundo aislado<br>
-          de :host.<br>
-
-          El malvado Lord Darth Vue,<br>
-          obsesionado por encontrar al<br>
-          joven ShadowDOMer, ha enviado<br>
-          miles de scrappers especiales<br>
-          hacía las infinitas urls<br>
-          del espacio web....<br>
-      </animation-starwarstext>
+              El malvado Lord Darth Vue,<br>
+              obsesionado por encontrar al<br>
+              joven ShadowDOMer, ha enviado<br>
+              miles de scrappers especiales<br>
+              hacía las infinitas urls<br>
+              del espacio web....<br>
+          </animation-starwarstext>
+        </div>
+      </main>
     </div>
   </body>
 </html>
