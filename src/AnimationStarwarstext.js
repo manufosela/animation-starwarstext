@@ -21,7 +21,7 @@ export class AnimationStarwarstext extends LitElement {
     return {
       delay: { type: Number },
       speed: { type: Number },
-      color: { type: String },
+      textColor: { type: String, attribute:'text-color' },
       width: { type: String },
       height: { type: String }
     };
@@ -37,7 +37,7 @@ export class AnimationStarwarstext extends LitElement {
     this.speed = 100;
     this.width = '100%';
     this.height = '50vh';
-    this.color = '#FF0';
+    this.textColor = '#FF0';
 
     this._rotateX = 27.5;
     this._rotateY = 0;
@@ -63,7 +63,7 @@ export class AnimationStarwarstext extends LitElement {
 
   render() {
     return html`
-      <div class="main" style="${styleMap({'background-image': `url(${this.backgroundStars})`, 'color': this.color, 'height': this.height, 'width': this.width})}">
+      <div class="main" style="${styleMap({'background-image': `url(${this.backgroundStars})`, 'color': this.textColor, 'height': this.height, 'width': this.width})}">
         <div class="titles" style="${styleMap({'width': this.width})}">
           <div class="titlecontent">
             <div class="content">
