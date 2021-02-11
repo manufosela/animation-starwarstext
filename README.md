@@ -1,4 +1,4 @@
-# animation-starwarstext [![npm-package](https://img.shields.io/badge/npmjs-package-red)](https://www.npmjs.com/package/animation-starwarstext) [![github](https://img.shields.io/badge/github-repository-green)](https://github.com/manu/animation-starwarstext) [![codepen-example](https://img.shields.io/badge/codepen-example-black)](https://codepen.io/manufosela/pen/YzGvmBy)
+# animation-starwarstext [![npm-package](https://img.shields.io/badge/npmjs-package-red)](https://www.npmjs.com/package/animation-starwarstext) [![github](https://img.shields.io/badge/github-repository-green)](https://github.com/manufosela/animation-starwarstext) [![codepen-example](https://img.shields.io/badge/codepen-example-black)](https://codepen.io/manufosela/pen/YzGvmBy)
 
 Lit-Element web component to show HTML text like starwars begin
 
