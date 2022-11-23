@@ -1,11 +1,11 @@
-# \<animation-starwarstext>
+# animation-starwarstext [![npm-package](https://img.shields.io/badge/npmjs-package-red)](https://www.npmjs.com/package/animation-starwarstext) [![github](https://img.shields.io/badge/github-repository-green)](https://github.com/manufosela/animation-starwarstext) [![codepen-example](https://img.shields.io/badge/codepen-example-black)](https://codepen.io/manufosela/pen/YzGvmBy)
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
 
 ```bash
-npm i animation-starwarstext
+npm i @manufosela/animation-starwarstext
 ```
 
 ## Usage
@@ -59,7 +59,6 @@ To build a production version of Storybook, run
 ```bash
 npm run storybook:build
 ```
-
 
 ## Tooling configs
 
