@@ -1,3 +1,3 @@
-import { AnimationStarwarstext } from "./src/AnimationStarwarstext";
+import { AnimationStarwarstext } from './src/AnimationStarwarstext.js';
 
-window.customElements.define(AnimationStarwarstext.is, AnimationStarwarstext);
+window.customElements.define('animation-starwarstext', AnimationStarwarstext);

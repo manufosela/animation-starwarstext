@@ -1,16 +1,6 @@
-import { LitElement, html } from "lit-element";
-import { styleMap } from 'lit-html/directives/style-map';
-import { wcNameStyles } from "./animation-starwarstext-style";
-
-/**
- * `animation-starwarstext`
- * AnimationStarwarstext
- *
- * @customElement animation-starwarstext
- * @polymer
- * @litElement
- * @demo demo/index.html
- */
+import { LitElement, html } from "lit";
+import { styleMap } from "lit/directives/style-map.js";
+import { wcNameStyles } from "./animation-starwarstext-style.js";
 
 export class AnimationStarwarstext extends LitElement {
   static get is() { 
@@ -30,7 +20,7 @@ export class AnimationStarwarstext extends LitElement {
   static get styles() {
     return [wcNameStyles];
   }
-  
+
   constructor() {
     super();
     this.delay = 0;
@@ -46,18 +36,19 @@ export class AnimationStarwarstext extends LitElement {
 
   firstUpdated(){
     this._perspective = this._calcPercent(this.height, 0.6);
-    let me = this.shadowRoot.querySelector('.titles');
-    let delay = ( this.delay ) ? `${this.delay}s ` : '';
-    let animationCSS = `scrollstw ${this.speed}s linear ${delay}infinite`;
+    const me = this.shadowRoot.querySelector('.titles');
+    const delay = ( this.delay ) ? `${this.delay}s ` : '';
+    const animationCSS = `scrollstw ${this.speed}s linear ${delay}infinite`;
 
     me.style.transform = `perspective(${this._perspective}) rotateX(${this._rotateX}deg) rotateY(${this._rotateY}deg)`;
     me.style.height = this._calcPercent(this.height, 10);
     me.childNodes[1].style.animation = animationCSS;
   }
 
-  _calcPercent(val, percent){
-    let valNum = parseInt(val);
-    let units = val.slice(('' + valNum).length);
+  _calcPercent(val, percent) {
+    this._null = null;
+    const valNum = parseInt(val, 10);
+    const units = val.slice((`${  valNum}`).length);
     return (valNum * percent) + units;
   }
 

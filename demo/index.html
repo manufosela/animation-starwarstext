@@ -1,87 +1,29 @@
 <!doctype html>
-<html>
-  <head>
-    <title>Animation StarWars Text demo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-    <script type="module" src="../animation-starwarstext.js"></script>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
 
-  <body>
-    <div class="container">
-      <header>
-        <h1>Basic animation-starwarstext Demo</h1>
-        <nav>
-          <a href="https://github.com/manufosela/animation-starwarstext" title="github public repository">
-            <img src="https://img.shields.io/badge/github-repository-green" alt="github public repository" />
-          </a>
-          <a href="https://www.npmjs.com/package/animation-starwarstext" title="npm package">
-            <img src="https://img.shields.io/badge/npmjs-package-red" alt="npm-package" />
-          </a>
-          <a href="https://codepen.io/manufosela/pen/YzGvmBy" title="codepen.io example">
-            <img src="https://img.shields.io/badge/codepen.io-example-black" alt="codepen.io example" />
-          </a>
-        </nav>
-      </header>
-      <aside class="blocks">
-        <pre class="block code">
-          <h3>Example</h3>
-          <code>
-            &lt;<span class="wc">animation-starwarstext</span><br>
-            &nbsp;&nbsp;width="900"<br>
-            &nbsp;&nbsp;height="300"<br>
-            &nbsp;&nbsp;time="5"<br>
-            &nbsp;&nbsp;background="#000"&gt;<br>
-              HTML to show like&lt;br&gt;<br>
-              StarWars Text<br>
-            &lt;/<span class="wc">animation-starwarstext</span>&gt;
-          </code>
-        </pre>
-        <pre class="block attributes">
-          <h3>Attributes</h3>
-          <ul>
-            <li></li>delay (Number) [0] },
-            <li></li>speed (Number) [100] },
-            <li></li>text-color (String) [#FF0] },
-            <li></li>width (String) [100%] },
-            <li></li>height (String) [50vh] }
-          </ul>
-        </pre>
-      </aside>
-      
-      <main>
-        <div id="example1" class="block">
-          <animation-starwarstext speed="100" delay="0" speed="10" height="80vh">
-              Hace tiempo en una galaxia muy muy lejana...<br>
-              <br>
-              Son tiempos adversos para la<br>
-              rebeLITon. Aunque la Estrella de<br>
-              los Frameworks ha sido destruida,<br>
-              las tropas inReactless han<br>
-              hecho salir a las fuerzas<br>
-              rebeLites de sus bases ocultas<br>
-              y las han persiguen a través de<br>
-              la weblaxia.<br>
+  <script type="module">
+    import { html, render } from 'lit';
+    import '../animation-starwarstext.js';
 
-              Tras escapar de la terrible<br>
-              Flota Angular, un grupo de<br>
-              guerreros de la libertad de los estandares,<br>
-              encabezados por Luke<br>
-              ShadowDOMer, ha establecido<br>
-              una nueva base secreta<br>
-              en el remoto mundo aislado<br>
-              de :host.<br>
-
-              El malvado Lord Darth Vue,<br>
-              obsesionado por encontrar al<br>
-              joven ShadowDOMer, ha enviado<br>
-              miles de scrappers especiales<br>
-              hacía las infinitas urls<br>
-              del espacio web....<br>
-          </animation-starwarstext>
-        </div>
-      </main>
-    </div>
-  </body>
+    const title = 'Hello owc World!';
+    render(
+      html`
+        <animation-starwarstext .title=${title}>
+          some light-dom
+        </animation-starwarstext>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
 </html>

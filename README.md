@@ -1,63 +1,76 @@
-# animation-starwarstext [![npm-package](https://img.shields.io/badge/npmjs-package-red)](https://www.npmjs.com/package/animation-starwarstext) [![github](https://img.shields.io/badge/github-repository-green)](https://github.com/manu/animation-starwarstext) [![codepen-example](https://img.shields.io/badge/codepen-example-black)](https://codepen.io/manufosela/pen/YzGvmBy)
+# \<animation-starwarstext>
 
-Lit-Element web component to show HTML text like starwars begin
+This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
-## Demo
+## Installation
 
+```bash
+npm i animation-starwarstext
 ```
-<h2>Basic animation-starwarstext Demo</h2>
-<h3>Demo</h3>
-<animation-starwarstext></animation-starwarstext>
 
-```
-<!---
-```
-<custom-element-demo>
-  <template>
-    <link rel="import" href="animation-starwarstext.html">
-    <next-code-block></next-code-block>
-  </template>
-</custom-element-demo>
-```
--->
+## Usage
+
 ```html
+<script type="module">
+  import 'animation-starwarstext/animation-starwarstext.js';
+</script>
+
 <animation-starwarstext></animation-starwarstext>
-
 ```
 
-## Install
+## Linting and formatting
 
-```
-npm install animation-starwarstext
-```
+To scan the project for linting and formatting errors, run
 
-## Viewing Your Element
-
-```
-npm run start
+```bash
+npm run lint
 ```
 
-## Running Tests
+To automatically fix linting and formatting errors, run
 
+```bash
+npm run format
 ```
+
+## Testing with Web Test Runner
+
+To execute a single test run:
+
+```bash
 npm run test
 ```
 
-## Build
+To run the tests in interactive watch mode run:
+
+```bash
+npm run test:watch
 ```
-npm run build
+
+## Demoing with Storybook
+
+To run a local instance of Storybook for your component, run
+
+```bash
+npm run storybook
 ```
 
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+To build a production version of Storybook, run
 
-## Author
+```bash
+npm run storybook:build
+```
 
-**manufosela**
 
-## License
+## Tooling configs
 
-This project is licensed under the Apache 2.0 License - see the [Apache-2.0](LICENSE) file for details
+For most of the tools, the configuration is in the `package.json` to minimize the amount of files in your project.
 
-## Generated
+If you customize the configuration a lot, you can consider moving them to individual files.
 
-**generator-lit-element-base** - *yeoman npm package* - by [@manufosela](https://github.com/manufosela/generator-litelement-webcomponent)
+## Local Demo with `web-dev-server`
+
+```bash
+npm start
+```
+
+To run a local development server that serves the basic demo located in `demo/index.html`
