@@ -3,7 +3,7 @@
   "description": "Webcomponent animation-starwarstext following open-wc recommendations",
   "license": "MIT",
   "author": "manufosela",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "animation-starwarstext.js",
   "module": "animation-starwarstext.js",
   "scripts": {
