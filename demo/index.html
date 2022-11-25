@@ -1,29 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-GB">
-<head>
-  <meta charset="utf-8">
-  <style>
-    body {
-      background: #fafafa;
-    }
-  </style>
-</head>
-<body>
-  <div id="demo"></div>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo">
+      <animation-starwarstext speed="100" delay="0">
+        Hace tiempo en una galaxia muy muy lejana...<br />
+        <br />
+        Son tiempos adversos para la<br />
+        rebeLIT-ion. Aunque la Estrella de<br />
+        los Frameworks ha sido destruida,<br />
+        las tropas inReactless han<br />
+        hecho salir a las fuerzas<br />
+        rebeLites de sus bases ocultas<br />
+        y las han persiguen a través de<br />
+        la weblaxia.<br />
 
-  <script type="module">
-    import { html, render } from 'lit';
-    import '../animation-starwarstext.js';
+        Tras escapar de la terrible<br />
+        Flota Angular, un grupo de<br />
+        guerreros de la libertad de los estandares,<br />
+        encabezados por Luke<br />
+        ShadowDOMer, ha establecido<br />
+        una nueva base secreta<br />
+        en el remoto mundo aislado<br />
+        de :host.<br />
 
-    const title = 'Hello owc World!';
-    render(
-      html`
-        <animation-starwarstext .title=${title}>
-          some light-dom
-        </animation-starwarstext>
-      `,
-      document.querySelector('#demo')
-    );
-  </script>
-</body>
+        El malvado Lord Darth Vue,<br />
+        obsesionado por encontrar al<br />
+        joven ShadowDOMer, ha enviado<br />
+        miles de scrappers especiales<br />
+        hacía las infinitas urls<br />
+        del espacio web....<br />
+      </animation-starwarstext>
+    </div>
+
+    <script type="module" src="../animation-starwarstext.js"></script>
+  </body>
 </html>

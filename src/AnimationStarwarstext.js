@@ -26,7 +26,7 @@ export class AnimationStarwarstext extends LitElement {
     this.delay = 0;
     this.speed = 100;
     this.width = '100%';
-    this.height = '50vh';
+    this.height = '100vh';
     this.textColor = '#FF0';
 
     this._rotateX = 27.5;
